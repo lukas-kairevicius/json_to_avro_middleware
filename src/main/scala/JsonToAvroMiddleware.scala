@@ -102,7 +102,7 @@ object JsonToAvroMiddleware {
 
     subjects.foreach(subject => {
       val schemaFuture: Future[HttpResponse] = Http().singleRequest(
-        HttpRequest(uri = schemaRegistryUrl + "/subjects/" + subject + "/versions/1")
+        HttpRequest(uri = schemaRegistryUrl + "/subjects/" + subject + "/versions/latest")
       )
 
       schemaFuture.onComplete {
