@@ -12,7 +12,7 @@ scalaVersion := "2.12.6"
 
 // It's possible to define many kinds of settings, such as:
 
-name := "hello-world"
+name := "json_to_avro_middleware"
 organization := "ch.epfl.scala"
 version := "1.0"
 
@@ -23,9 +23,6 @@ version := "1.0"
 
 // Want to use a published library in your project?
 // You can define other libraries as dependencies in your build like this:
-libraryDependencies += "org.typelevel" %% "cats-core" % "1.1.0"
-
-libraryDependencies += "com.sksamuel.avro4s" %% "avro4s-core" % "1.9.0"
 
 libraryDependencies += "com.typesafe.akka" %% "akka-http" % "10.1.5"
 libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.12"
